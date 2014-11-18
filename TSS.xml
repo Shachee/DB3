@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tss>
+	<persons>
+		<person id="1" type="c">Joe</person>
+		<person id="2" type="c">Bob</person>
+		<person id="3" type="c">Mary</person>
+		<person id="4" type="c">Ann</person>
+		<person id="5" type="c">Bess</person>
+		<person id="6" type="c">Tom</person>
+		<person id="7" type="c">Don</person>
+		<person id="8" type="j">Judy</person>
+		<person id="9" type="j">Lucy</person>
+		<person id="10" type="j">Irving</person>
+		<person id="11" type="j">Phil</person>
+		<person id="12" type="j">Oscar</person>
+	</persons>
+	<pieces>
+		<piece id="1">Barcarolle</piece>
+		<piece id="2">Giselle</piece>
+		<piece id="3">The Tramp</piece>
+		<piece id="4">Besame Mucho</piece>
+		<piece id="5">Swan Lake</piece>
+		<piece id="6">Habanera</piece>
+	</pieces>
+	<shows>
+	 	<show id="1" date="20140202">
+	 		<judges>
+	 			<person id="8" />
+	 			<person id="9" />
+	 			<person id="10" />
+	 		</judges>
+	 	</show>
+	 	<show id="2" date="20140402">
+	 		<judges>
+	 			<person id="8" />
+	 			<person id="11" />
+	 		</judges>
+	 	</show>
+	 	<show id="3" date="20140602">
+	 		<judges>
+	 			<person id="10" />
+	 			<person id="11" />
+	 			<person id="12" />
+	 		</judges>
+	 	</show>
+	 	<show id="4" date="20140802">
+	 		<judges>
+	 			<person id="9" />
+	 			<person id="12" />
+	 		</judges>
+	 	</show>
+	 	<show id="5" date="20141005">
+	 		<judges>
+	 			<person id="9" />
+	 			<person id="10" />
+	 			<person id="11" />
+	 		</judges>
+	 	</show>
+	</shows>
+	<auditions>
+		<audition show-id="1">
+			<performace contestant-id="1" piece-id="1">
+				<scores>
+					<score judge-id="8">7</score>
+					<score judge-id="9">8</score>
+					<score judge-id="10">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="1">
+				<scores>
+					<score judge-id="8">5</score>
+					<score judge-id="9">6</score>
+					<score judge-id="10">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="2">
+				<scores>
+					<score judge-id="8">9</score>
+					<score judge-id="9">6</score>
+					<score judge-id="10">8</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="5" piece-id="4">
+				<scores>
+					<score judge-id="8">4</score>
+					<score judge-id="9">5</score>
+					<score judge-id="10">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="7" piece-id="4">
+				<scores>
+					<score judge-id="8">9</score>
+					<score judge-id="9">9</score>
+					<score judge-id="10">7</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="7" piece-id="5">
+				<scores>
+					<score judge-id="8">7</score>
+					<score judge-id="9">7</score>
+					<score judge-id="10">10</score> 
+				</scores>
+			</performace>
+		</audition>
+		<audition show-id="2">
+			<performace contestant-id="2" piece-id="5">
+				<scores>
+					<score judge-id="8">8</score>
+					<score judge-id="11">6</score>
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="6">
+				<scores>
+					<score judge-id="8">3</score>
+					<score judge-id="11">5</score>
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="4">
+				<scores>
+					<score judge-id="8">9</score>
+					<score judge-id="11">10</score>
+				</scores>
+			</performace>
+			<performace contestant-id="4" piece-id="6">
+				<scores>
+					<score judge-id="8">7</score>
+					<score judge-id="11">6</score>
+				</scores>
+			</performace>
+			<performace contestant-id="5" piece-id="2">
+				<scores>
+					<score judge-id="8">8</score>
+					<score judge-id="11">7</score>
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="4">
+				<scores>
+					<score judge-id="8">5</score>
+					<score judge-id="11">5</score>
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="3">
+				<scores>
+					<score judge-id="8">7</score>
+					<score judge-id="11">6</score>
+				</scores>
+			</performace>
+		</audition>
+		<audition show-id="3">
+			<performace contestant-id="2" piece-id="3">
+				<scores>
+					<score judge-id="10">8</score>
+					<score judge-id="11">7</score>
+					<score judge-id="12">9</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="4" piece-id="4">
+				<scores>
+					<score judge-id="10">7</score>
+					<score judge-id="11">6</score>
+					<score judge-id="12">4</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="5" piece-id="5">
+				<scores>
+					<score judge-id="10">6</score>
+					<score judge-id="11">8</score>
+					<score judge-id="12">7</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="1">
+				<scores>
+					<score judge-id="10">9</score>
+					<score judge-id="11">7</score>
+					<score judge-id="12">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="7" piece-id="2">
+				<scores>
+					<score judge-id="10">8</score>
+					<score judge-id="11">6</score>
+					<score judge-id="12">9</score> 
+				</scores>
+			</performace>
+		</audition>
+		<audition show-id="4">
+			<performace contestant-id="1" piece-id="3">
+				<scores>
+					<score judge-id="9">7</score>
+					<score judge-id="12">6</score>
+				</scores>
+			</performace>
+			<performace contestant-id="2" piece-id="1">
+				<scores>
+					<score judge-id="9">6</score>
+					<score judge-id="12">8</score>
+				</scores>
+			</performace>
+			<performace contestant-id="4" piece-id="4">
+				<scores>
+					<score judge-id="9">9</score>
+					<score judge-id="12">8</score>
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="3">
+				<scores>
+					<score judge-id="9">8</score>
+					<score judge-id="12">10</score>
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="1">
+				<scores>
+					<score judge-id="9">5</score>
+					<score judge-id="12">5</score>
+				</scores>
+			</performace>
+		</audition>
+		<audition show-id="5">
+			<performace contestant-id="2" piece-id="5">
+				<scores>
+					<score judge-id="9">3</score>
+					<score judge-id="10">5</score>
+					<score judge-id="11">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="2" piece-id="2">
+				<scores>
+					<score judge-id="9">4</score>
+					<score judge-id="10">6</score>
+					<score judge-id="11">8</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="1">
+				<scores>
+					<score judge-id="9">5</score>
+					<score judge-id="10">7</score>
+					<score judge-id="11">10</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="3" piece-id="4">
+				<scores>
+					<score judge-id="9">6</score>
+					<score judge-id="10">8</score>
+					<score judge-id="11">7</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="4" piece-id="4">
+				<scores>
+					<score judge-id="9">7</score>
+					<score judge-id="10">9</score>
+					<score judge-id="11">6</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="5" piece-id="4">
+				<scores>
+					<score judge-id="9">9</score>
+					<score judge-id="10">8</score>
+					<score judge-id="11">8</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="5" piece-id="6">
+				<scores>
+					<score judge-id="9">8</score>
+					<score judge-id="10">7</score>
+					<score judge-id="11">10</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="6" piece-id="3">
+				<scores>
+					<score judge-id="9">6</score>
+					<score judge-id="10">6</score>
+					<score judge-id="11">8</score> 
+				</scores>
+			</performace>
+			<performace contestant-id="7" piece-id="3">
+				<scores>
+					<score judge-id="9">5</score>
+					<score judge-id="10">8</score>
+					<score judge-id="11">7</score> 
+				</scores>
+			</performace>
+		</audition>
+	</auditions>
+</tss>
