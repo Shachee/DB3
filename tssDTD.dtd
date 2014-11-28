@@ -1,0 +1,21 @@
+
+<!ELEMENT contestant ( performance+ ) ><!ATTLIST contestant Cid  ID NMTOKEN #REQUIRED >
+<!ATTLIST contestant name NMTOKEN #REQUIRED >
+
+<!ELEMENT contestants ( contestant+ ) >
+<!ELEMENT judge ( #PCDATA ) ><!ATTLIST judge Jid ID #REQUIRED >
+
+<!ELEMENT judges ( judge+ ) >
+<!ELEMENT performance ( score+ ) ><!ATTLIST performance Pid IDREF #REQUIRED >
+<!ATTLIST performance Sid IDREF #REQUIRED >
+
+<!ELEMENT piece ( #PCDATA ) ><!ATTLIST piece Pid ID NMTOKEN #REQUIRED >
+
+<!ELEMENT pieces ( piece+ ) >
+<!ELEMENT score ( #PCDATA ) ><!ATTLIST score Jid IDREF #REQUIRED >
+
+<!ELEMENT show ( judge+ ) ><!ATTLIST show Sid ID NMTOKEN #REQUIRED >
+<!ATTLIST show date NMTOKEN #REQUIRED >
+
+<!ELEMENT shows ( show+ ) >
+<!ELEMENT tss ( judges, pieces, shows, contestants ) >

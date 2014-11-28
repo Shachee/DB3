@@ -1,276 +1,266 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "tssDTD.dtd">
 <tss>
 	<judges>
-		<judge id="8"  >Judy</judge>
-		<judge id="9"  >Lucy</judge>
-		<judge id="10"  >Irving</judge>
-		<judge id="11"  >Phil</judge>
-		<judge id="12"  >Oscar</judge>
+		<judge Jid="8"  >Judy</judge>
+		<judge Jid="9"  >Lucy</judge>
+		<judge Jid="10"  >Irving</judge>
+		<judge Jid="11"  >Phil</judge>
+		<judge Jid="12"  >Oscar</judge>
 	</judges>
 	<pieces>
-		<piece id="1">Barcarolle</piece>
-		<piece id="2">Giselle</piece>
-		<piece id="3">The Tramp</piece>
-		<piece id="4">Besame Mucho</piece>
-		<piece id="5">Swan Lake</piece>
-		<piece id="6">Habanera</piece>
+		<piece Pid="1">Barcarolle</piece>
+		<piece Pid="2">Giselle</piece>
+		<piece Pid="3">The Tramp</piece>
+		<piece Pid="4">Besame Mucho</piece>
+		<piece Pid="5">Swan Lake</piece>
+		<piece Pid="6">Habanera</piece>
 	</pieces>
 	<shows>
-	 	<show id="1" date="20140202">
-	 		<judges>
-	 			<person id="8" />
-	 			<person id="9" />
-	 			<person id="10" />
-	 		</judges>
+	 	<show Sid="1" date="20140202">
+	 			<judge Jid="8" />
+	 			<judge Jid="9" />
+	 			<judge Jid="10" />
 	 	</show>
-	 	<show id="2" date="20140402">
-	 		<judges>
-	 			<person id="8" />
-	 			<person id="11" />
-	 		</judges>
+	 	<show Sid="2" date="20140402">
+	 			<judge Jid="8" />
+	 			<judge Jid="11" />
 	 	</show>
-	 	<show id="3" date="20140602">
-	 		<judges>
-	 			<person id="10" />
-	 			<person id="11" />
-	 			<person id="12" />
-	 		</judges>
+	 	<show Sid="3" date="20140602">
+	 			<judge Jid="10" />
+	 			<judge Jid="11" />
+	 			<judge Jid="12" />
 	 	</show>
-	 	<show id="4" date="20140802">
-	 		<judges>
-	 			<person id="9" />
-	 			<person id="12" />
-	 		</judges>
+	 	<show Sid="4" date="20140802">
+	 			<judge Jid="9" />
+	 			<judge Jid="12" />
 	 	</show>
-	 	<show id="5" date="20141005">
-	 		<judges>
-	 			<person id="9" />
-	 			<person id="10" />
-	 			<person id="11" />
-	 		</judges>
+	 	<show Sid="5" date="20141005">
+	 			<judge Jid="9" />
+	 			<judge Jid="10" />
+	 			<judge Jid="11" />
 	 	</show>
 	</shows>
 	<contestants>
-			<contestant id="1" name="Joe">
-				<performance show-id="4" piece-id="3">
-					<score judge-id="9">7</score>
-					<score judge-id="12">6</score>
+			<contestant Cid="1" name="Joe">
+				<performance Sid="4" Pid="3">
+					<score Jid="9">7</score>
+					<score Jid="12">6</score>
 				</performance>
-				<performance show-id="1" piece-id="1">
+				<performance Sid="1" Pid="1">
 				
-					<score judge-id="8">7</score>
-					<score judge-id="9">8</score>
-					<score judge-id="10">6</score> 
-				
-				</performance>
-			</contestant>
-			<contestant id="2" name="Bob">
-				<performance show-id="2" piece-id="5">
-				
-					<score judge-id="8">8</score>
-					<score judge-id="11">6</score>
-				
-				</performance>
-				<performance show-id="3" piece-id="3">
-				
-					<score judge-id="10">8</score>
-					<score judge-id="11">7</score>
-					<score judge-id="12">9</score> 
-				
-				</performance>
-				<performance show-id="4" piece-id="1">
-				
-					<score judge-id="9">6</score>
-					<score judge-id="12">8</score>
-				
-				</performance>
-				<performance show-id="5" piece-id="5">
-				
-					<score judge-id="9">3</score>
-					<score judge-id="10">5</score>
-					<score judge-id="11">6</score> 
-				
-				</performance>
-				<performance show-id="5" piece-id="2">
-				
-					<score judge-id="9">4</score>
-					<score judge-id="10">6</score>
-					<score judge-id="11">8</score> 
+					<score Jid="8">7</score>
+					<score Jid="9">8</score>
+					<score Jid="10">6</score> 
 				
 				</performance>
 			</contestant>
-			<contestant id="3" name="Mary">
+			<contestant Cid="2" name="Bob">
+				<performance Sid="2" Pid="5">
+				
+					<score Jid="8">8</score>
+					<score Jid="11">6</score>
+				
+				</performance>
+				<performance Sid="3" Pid="3">
+				
+					<score Jid="10">8</score>
+					<score Jid="11">7</score>
+					<score Jid="12">9</score> 
+				
+				</performance>
+				<performance Sid="4" Pid="1">
+				
+					<score Jid="9">6</score>
+					<score Jid="12">8</score>
+				
+				</performance>
+				<performance Sid="5" Pid="5">
+				
+					<score Jid="9">3</score>
+					<score Jid="10">5</score>
+					<score Jid="11">6</score> 
+				
+				</performance>
+				<performance Sid="5" Pid="2">
+				
+					<score Jid="9">4</score>
+					<score Jid="10">6</score>
+					<score Jid="11">8</score> 
+				
+				</performance>
+			</contestant>
+			<contestant Cid="3" name="Mary">
 			
-				<performance show-id="1" piece-id="1">
+				<performance Sid="1" Pid="1">
 				
-					<score judge-id="8">5</score>
-					<score judge-id="9">6</score>
-					<score judge-id="10">6</score> 
-				
-				</performance>
-				<performance show-id="1" piece-id="2">
-				
-					<score judge-id="8">9</score>
-					<score judge-id="9">6</score>
-					<score judge-id="10">8</score> 
+					<score Jid="8">5</score>
+					<score Jid="9">6</score>
+					<score Jid="10">6</score> 
 				
 				</performance>
-				<performance show-id="2" piece-id="6">
+				<performance Sid="1" Pid="2">
 				
-					<score judge-id="8">3</score>
-					<score judge-id="11">5</score>
-				
-				</performance>
-				<performance show-id="2" piece-id="4">
-				
-					<score judge-id="8">9</score>
-					<score judge-id="11">10</score>
+					<score Jid="8">9</score>
+					<score Jid="9">6</score>
+					<score Jid="10">8</score> 
 				
 				</performance>
-				<performance show-id="5" piece-id="1">
+				<performance Sid="2" Pid="6">
 				
-					<score judge-id="9">5</score>
-					<score judge-id="10">7</score>
-					<score judge-id="11">10</score> 
+					<score Jid="8">3</score>
+					<score Jid="11">5</score>
 				
 				</performance>
-				<performance show-id="5" piece-id="4">
+				<performance Sid="2" Pid="4">
 				
-					<score judge-id="9">6</score>
-					<score judge-id="10">8</score>
-					<score judge-id="11">7</score> 
+					<score Jid="8">9</score>
+					<score Jid="11">10</score>
+				
+				</performance>
+				<performance Sid="5" Pid="1">
+				
+					<score Jid="9">5</score>
+					<score Jid="10">7</score>
+					<score Jid="11">10</score> 
+				
+				</performance>
+				<performance Sid="5" Pid="4">
+				
+					<score Jid="9">6</score>
+					<score Jid="10">8</score>
+					<score Jid="11">7</score> 
 				
 				</performance>
 				
 
 			</contestant>
-			<contestant id="4" name="Ann">
-				<performance show-id="2" piece-id="6">
+			<contestant Cid="4" name="Ann">
+				<performance Sid="2" Pid="6">
 				
-					<score judge-id="8">7</score>
-					<score judge-id="11">6</score>
-				
-				</performance>
-				<performance show-id="3" piece-id="4">
-				
-					<score judge-id="10">7</score>
-					<score judge-id="11">6</score>
-					<score judge-id="12">4</score> 
+					<score Jid="8">7</score>
+					<score Jid="11">6</score>
 				
 				</performance>
-				<performance show-id="4" piece-id="4">
+				<performance Sid="3" Pid="4">
 				
-					<score judge-id="9">9</score>
-					<score judge-id="12">8</score>
+					<score Jid="10">7</score>
+					<score Jid="11">6</score>
+					<score Jid="12">4</score> 
 				
 				</performance>
-				<performance show-id="5" piece-id="4">
+				<performance Sid="4" Pid="4">
 				
-					<score judge-id="9">7</score>
-					<score judge-id="10">9</score>
-					<score judge-id="11">6</score> 
+					<score Jid="9">9</score>
+					<score Jid="12">8</score>
+				
+				</performance>
+				<performance Sid="5" Pid="4">
+				
+					<score Jid="9">7</score>
+					<score Jid="10">9</score>
+					<score Jid="11">6</score> 
 				
 				</performance>
 				
 			</contestant>
-			<contestant id="5" name="Bess">
-				<performance show-id="1" piece-id="4">
+			<contestant Cid="5" name="Bess">
+				<performance Sid="1" Pid="4">
 				
-					<score judge-id="8">4</score>
-					<score judge-id="9">5</score>
-					<score judge-id="10">6</score> 
+					<score Jid="8">4</score>
+					<score Jid="9">5</score>
+					<score Jid="10">6</score> 
 				
 				</performance>	
-				<performance show-id="2" piece-id="2">
+				<performance Sid="2" Pid="2">
 				
-					<score judge-id="8">8</score>
-					<score judge-id="11">7</score>
-				
-				</performance>
-				<performance show-id="3" piece-id="5">
-				
-					<score judge-id="10">6</score>
-					<score judge-id="11">8</score>
-					<score judge-id="12">7</score> 
+					<score Jid="8">8</score>
+					<score Jid="11">7</score>
 				
 				</performance>
-				<performance show-id="5" piece-id="4">
+				<performance Sid="3" Pid="5">
 				
-					<score judge-id="9">9</score>
-					<score judge-id="10">8</score>
-					<score judge-id="11">8</score> 
-				
-				</performance>
-				<performance show-id="5" piece-id="6">
-				
-					<score judge-id="9">8</score>
-					<score judge-id="10">7</score>
-					<score judge-id="11">10</score> 
+					<score Jid="10">6</score>
+					<score Jid="11">8</score>
+					<score Jid="12">7</score> 
 				
 				</performance>
-			</contestant>
-			<contestant id="6" name="Tom">
-				<performance show-id="2" piece-id="4">
+				<performance Sid="5" Pid="4">
 				
-					<score judge-id="8">5</score>
-					<score judge-id="11">5</score>
-				
-				</performance>
-				<performance show-id="2" piece-id="3">
-				
-					<score judge-id="8">7</score>
-					<score judge-id="11">6</score>
+					<score Jid="9">9</score>
+					<score Jid="10">8</score>
+					<score Jid="11">8</score> 
 				
 				</performance>
+				<performance Sid="5" Pid="6">
 				
-				<performance show-id="3" piece-id="1">
-				
-					<score judge-id="10">9</score>
-					<score judge-id="11">7</score>
-					<score judge-id="12">6</score> 
-				
-				</performance>
-				<performance show-id="5" piece-id="3">
-				
-					<score judge-id="9">6</score>
-					<score judge-id="10">6</score>
-					<score judge-id="11">8</score> 
-				
-				</performance>
-				<performance show-id="4" piece-id="3">
-				
-					<score judge-id="9">8</score>
-					<score judge-id="12">10</score>
-				
-				</performance>
-				<performance show-id="4" piece-id="1">
-				
-					<score judge-id="9">5</score>
-					<score judge-id="12">5</score>
+					<score Jid="9">8</score>
+					<score Jid="10">7</score>
+					<score Jid="11">10</score> 
 				
 				</performance>
 			</contestant>
-			<contestant id="7" name="Don">
-				<performance show-id="1" piece-id="4">
+			<contestant Cid="6" name="Tom">
+				<performance Sid="2" Pid="4">
 				
-					<score judge-id="8">9</score>
-					<score judge-id="9">9</score>
-					<score judge-id="10">7</score> 
+					<score Jid="8">5</score>
+					<score Jid="11">5</score>
 				
 				</performance>
-				<performance show-id="1" piece-id="5">
+				<performance Sid="2" Pid="3">
 				
-					<score judge-id="8">7</score>
-					<score judge-id="9">7</score>
-					<score judge-id="10">10</score> 
+					<score Jid="8">7</score>
+					<score Jid="11">6</score>
+				
+				</performance>
+				
+				<performance Sid="3" Pid="1">
+				
+					<score Jid="10">9</score>
+					<score Jid="11">7</score>
+					<score Jid="12">6</score> 
+				
+				</performance>
+				<performance Sid="5" Pid="3">
+				
+					<score Jid="9">6</score>
+					<score Jid="10">6</score>
+					<score Jid="11">8</score> 
+				
+				</performance>
+				<performance Sid="4" Pid="3">
+				
+					<score Jid="9">8</score>
+					<score Jid="12">10</score>
+				
+				</performance>
+				<performance Sid="4" Pid="1">
+				
+					<score Jid="9">5</score>
+					<score Jid="12">5</score>
+				
+				</performance>
+			</contestant>
+			<contestant Cid="7" name="Don">
+				<performance Sid="1" Pid="4">
+				
+					<score Jid="8">9</score>
+					<score Jid="9">9</score>
+					<score Jid="10">7</score> 
+				
+				</performance>
+				<performance Sid="1" Pid="5">
+				
+					<score Jid="8">7</score>
+					<score Jid="9">7</score>
+					<score Jid="10">10</score> 
 				
 				</performance>		
-				<performance show-id="5" piece-id="3">
+				<performance Sid="5" Pid="3">
 				
-					<score judge-id="9">5</score>
-					<score judge-id="10">8</score>
-					<score judge-id="11">7</score> 
+					<score Jid="9">5</score>
+					<score Jid="10">8</score>
+					<score Jid="11">7</score> 
 				
 				</performance>
 			
