@@ -1,3 +1,5 @@
+       <!--> Query3<-->
+
 xquery version "3.0";
 
 for $p1 in //tss/contestants/contestant/performance,$p2 in //tss/contestants/contestant/performance
@@ -15,7 +17,44 @@ return
             </result>    
         
     
-       
-   
+       <!--> Query2<-->
+   		
+		xquery version "3.0";
+
+for $p1 in //tss/contestants/contestant/performance,$p2 in //tss/contestants/contestant/performance
+where 
+$p1/@Pid = $p2/@Pid 
+and $p1/../@Cid > $p2/../@Cid
+return
+    let $avg1 := avg($p1/score/points/text())
+    let $avg2 := avg($p2/score/points/text())
+    return if($avg1 = $avg2)
+    then <result>
+            <c1>{data($p1/../@name)}</c1>
+            <c2>{data($p2/../@name)}</c2>
+           
+            </result>  
+    else()
+        
+       <!--> Query3<-->
+
+		
+for $p1 in //tss/contestants/contestant/performance,$p2 in //tss/contestants/contestant/performance
+where 
+$p1/@Pid = $p2/@Pid 
+and $p1/../@Cid > $p2/../@Cid
+return
+    let $max1 := max($p1/score/points/text())
+    let $max2 := max($p2/score/points/text())
+    let $cnt1 := count($p1/score/points/text())
+    let $cnt2 := count($p2/score/points/text())
+    
+    return if($max1 = $max2 and $cnt1 = 3 and $cnt2 = 3)
+    then <result>
+            <c1>{data($p1/../@name)}</c1>
+            <c2>{data($p2/../@name)}</c2>
+           
+            </result>  
+    else()
 
 
