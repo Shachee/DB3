@@ -1,0 +1,21 @@
+xquery version "3.0";
+
+for $p1 in //tss/contestants/contestant/performance,$p2 in //tss/contestants/contestant/performance
+where 
+$p1/@Pid = $p2/@Pid 
+and $p1/../@Cid > $p2/../@Cid
+and $p1/@Sid = $p2/@Sid 
+return
+    for $score in $p1/score
+    for $score2 in $p2/score
+    where $score2/points/text() = $score/points/text() and $score2/@Jid = $score/@Jid
+    return  <result>
+            <c1>{data($p1/../@name)}</c1>
+            <c2>{data($p2/../@name)}</c2>
+            </result>    
+        
+    
+       
+   
+
+

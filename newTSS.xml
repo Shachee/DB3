@@ -44,49 +44,49 @@
 	<contestants>
 			<contestant Cid="1" name="Joe">
 				<performance Sid="4" Pid="3">
-					<score Jid="9">7</score>
-					<score Jid="12">6</score>
+					<score Jid="9"><points>7</points></score>
+					<score Jid="12"><points>6</points></score>
 				</performance>
 				<performance Sid="1" Pid="1">
 				
-					<score Jid="8">7</score>
-					<score Jid="9">8</score>
-					<score Jid="10">6</score> 
+					<score Jid="8"><points>7</points></score>
+					<score Jid="9"><points>8</points></score>
+					<score Jid="10"><points>6</points></score> 
 				
 				</performance>
 			</contestant>
 			<contestant Cid="2" name="Bob">
 				<performance Sid="2" Pid="5">
 				
-					<score Jid="8">8</score>
-					<score Jid="11">6</score>
+					<score Jid="8"><points>8</points></score>
+					<score Jid="11"><points>6</points></score>
 				
 				</performance>
 				<performance Sid="3" Pid="3">
 				
-					<score Jid="10">8</score>
-					<score Jid="11">7</score>
-					<score Jid="12">9</score> 
+					<score Jid="10"><points>8</points></score>
+					<score Jid="11"><points>7</points></score>
+					<score Jid="12"><points>9</points></score> 
 				
 				</performance>
 				<performance Sid="4" Pid="1">
 				
-					<score Jid="9">6</score>
-					<score Jid="12">8</score>
+					<score Jid="9"><points>6</points></score>
+					<score Jid="12"><points>8</points></score>
 				
 				</performance>
 				<performance Sid="5" Pid="5">
 				
-					<score Jid="9">3</score>
-					<score Jid="10">5</score>
-					<score Jid="11">6</score> 
+					<score Jid="9"><points>3</points></score>
+					<score Jid="10"><points>5</points></score>
+					<score Jid="11"><points>6</points></score> 
 				
 				</performance>
 				<performance Sid="5" Pid="2">
 				
-					<score Jid="9">4</score>
-					<score Jid="10">6</score>
-					<score Jid="11">8</score> 
+					<score Jid="9"><points>4</points></score>
+					<score Jid="10"><points>6</points></score>
+					<score Jid="11"><points>8</points></score> 
 				
 				</performance>
 			</contestant>
@@ -94,42 +94,42 @@
 			
 				<performance Sid="1" Pid="1">
 				
-					<score Jid="8">5</score>
-					<score Jid="9">6</score>
-					<score Jid="10">6</score> 
+					<score Jid="8"><points>5</points></score>
+					<score Jid="9"><points>6</points></score>
+					<score Jid="10"><points>6</points></score> 
 				
 				</performance>
 				<performance Sid="1" Pid="2">
 				
-					<score Jid="8">9</score>
-					<score Jid="9">6</score>
-					<score Jid="10">8</score> 
+					<score Jid="8"><points>9</points></score>
+					<score Jid="9"><points>6</points></score>
+					<score Jid="10"><points>8</points></score> 
 				
 				</performance>
 				<performance Sid="2" Pid="6">
 				
-					<score Jid="8">3</score>
-					<score Jid="11">5</score>
+					<score Jid="8"><points>3</points></score>
+					<score Jid="11"><points>5</points></score>
 				
 				</performance>
 				<performance Sid="2" Pid="4">
 				
-					<score Jid="8">9</score>
-					<score Jid="11">10</score>
+					<score Jid="8"><points>9</points></score>
+					<score Jid="11"><points>10</points></score>
 				
 				</performance>
 				<performance Sid="5" Pid="1">
 				
-					<score Jid="9">5</score>
-					<score Jid="10">7</score>
-					<score Jid="11">10</score> 
+					<score Jid="9"><points>5</points></score>
+					<score Jid="10"><points>7</points></score>
+					<score Jid="11"><points>10</points></score> 
 				
 				</performance>
 				<performance Sid="5" Pid="4">
 				
-					<score Jid="9">6</score>
-					<score Jid="10">8</score>
-					<score Jid="11">7</score> 
+					<score Jid="9"><points>6</points></score>
+					<score Jid="10"><points>8</points></score>
+					<score Jid="11"><points>7</points></score> 
 				
 				</performance>
 				
@@ -138,28 +138,28 @@
 			<contestant Cid="4" name="Ann">
 				<performance Sid="2" Pid="6">
 				
-					<score Jid="8">7</score>
-					<score Jid="11">6</score>
+					<score Jid="8"><points>7</points></score>
+					<score Jid="11"><points>6</points></score>
 				
 				</performance>
 				<performance Sid="3" Pid="4">
 				
-					<score Jid="10">7</score>
-					<score Jid="11">6</score>
-					<score Jid="12">4</score> 
+					<score Jid="10"><points>7</points></score>
+					<score Jid="11"><points>6</points></score>
+					<score Jid="12"><points>4</points></score> 
 				
 				</performance>
 				<performance Sid="4" Pid="4">
 				
-					<score Jid="9">9</score>
-					<score Jid="12">8</score>
+					<score Jid="9"><points>9</points></score>
+					<score Jid="12"><points>8</points></score>
 				
 				</performance>
 				<performance Sid="5" Pid="4">
 				
-					<score Jid="9">7</score>
-					<score Jid="10">9</score>
-					<score Jid="11">6</score> 
+					<score Jid="9"><points>7</points></score>
+					<score Jid="10"><points>9</points></score>
+					<score Jid="11"><points>6</points></score> 
 				
 				</performance>
 				
@@ -167,102 +167,108 @@
 			<contestant Cid="5" name="Bess">
 				<performance Sid="1" Pid="4">
 				
-					<score Jid="8">4</score>
-					<score Jid="9">5</score>
-					<score Jid="10">6</score> 
+					<score Jid="8"><points>4</points></score>
+					<score Jid="9"><points>5</points></score>
+					<score Jid="10"><points>6</points></score> 
 				
 				</performance>	
 				<performance Sid="2" Pid="2">
 				
-					<score Jid="8">8</score>
-					<score Jid="11">7</score>
+					<score Jid="8"><points>8</points></score>
+					<score Jid="11"><points>7</points></score>
 				
 				</performance>
 				<performance Sid="3" Pid="5">
 				
-					<score Jid="10">6</score>
-					<score Jid="11">8</score>
-					<score Jid="12">7</score> 
+					<score Jid="10"><points>6</points></score>
+					<score Jid="11"><points>8</points></score>
+					<score Jid="12"><points>7</points></score> 
 				
 				</performance>
 				<performance Sid="5" Pid="4">
 				
-					<score Jid="9">9</score>
-					<score Jid="10">8</score>
-					<score Jid="11">8</score> 
+					<score Jid="9"><points>9</points></score>
+					<score Jid="10"><points>8</points></score>
+					<score Jid="11"><points>8</points></score> 
 				
 				</performance>
 				<performance Sid="5" Pid="6">
 				
-					<score Jid="9">8</score>
-					<score Jid="10">7</score>
-					<score Jid="11">10</score> 
+					<score Jid="9"><points>8</points></score>
+					<score Jid="10"><points>7</points></score>
+					<score Jid="11"><points>10</points></score> 
 				
 				</performance>
 			</contestant>
 			<contestant Cid="6" name="Tom">
 				<performance Sid="2" Pid="4">
 				
-					<score Jid="8">5</score>
-					<score Jid="11">5</score>
+					<score Jid="8"><points>5</points></score>
+					<score Jid="11"><points>5</points></score>
 				
 				</performance>
 				<performance Sid="2" Pid="3">
 				
-					<score Jid="8">7</score>
-					<score Jid="11">6</score>
+					<score Jid="8"><points>7</points></score>
+					<score Jid="11"><points>6</points></score>
 				
 				</performance>
 				
 				<performance Sid="3" Pid="1">
 				
-					<score Jid="10">9</score>
-					<score Jid="11">7</score>
-					<score Jid="12">6</score> 
+					<score Jid="10"><points>9</points></score>
+					<score Jid="11"><points>7</points></score>
+					<score Jid="12"><points>6</points></score> 
 				
 				</performance>
 				<performance Sid="5" Pid="3">
 				
-					<score Jid="9">6</score>
-					<score Jid="10">6</score>
-					<score Jid="11">8</score> 
+					<score Jid="9"><points>6</points></score>
+					<score Jid="10"><points>6</points></score>
+					<score Jid="11"><points>8</points></score> 
 				
 				</performance>
 				<performance Sid="4" Pid="3">
 				
-					<score Jid="9">8</score>
-					<score Jid="12">10</score>
+					<score Jid="9"><points>8</points></score>
+					<score Jid="12"><points>10</points></score>
 				
 				</performance>
 				<performance Sid="4" Pid="1">
 				
-					<score Jid="9">5</score>
-					<score Jid="12">5</score>
+					<score Jid="9"><points>5</points></score>
+					<score Jid="12"><points>5</points></score>
 				
 				</performance>
 			</contestant>
 			<contestant Cid="7" name="Don">
 				<performance Sid="1" Pid="4">
 				
-					<score Jid="8">9</score>
-					<score Jid="9">9</score>
-					<score Jid="10">7</score> 
+					<score Jid="8"><points>9</points></score>
+					<score Jid="9"><points>9</points></score>
+					<score Jid="10"><points>7</points></score> 
 				
 				</performance>
 				<performance Sid="1" Pid="5">
 				
-					<score Jid="8">7</score>
-					<score Jid="9">7</score>
-					<score Jid="10">10</score> 
+					<score Jid="8"><points>7</points></score>
+					<score Jid="9"><points>7</points></score>
+					<score Jid="10"><points>10</points></score> 
 				
 				</performance>		
 				<performance Sid="5" Pid="3">
 				
-					<score Jid="9">5</score>
-					<score Jid="10">8</score>
-					<score Jid="11">7</score> 
+					<score Jid="9"><points>5</points></score>
+					<score Jid="10"><points>8</points></score>
+					<score Jid="11"><points>7</points></score> 
 				
 				</performance>
+				<performace Sid="3" Pid="2">
+					<score Jid="10"><points>8</points></score>
+					<score Jid="11"><points>6</points></score>
+					<score Jid="12"><points>9</points></score> 
+				
+			</performace>
 			
 			</contestant>
 		</contestants>
