@@ -74,11 +74,29 @@ let $p2 := distinct-values(data($c2/performance/@Pid))
 let $intersect := tss:value-intersect($p1,$p2)
 where $c1/@Cid != $c2/@Cid
 return  
-          if(fn:exists($intersect) and count($intersect) = count($p2))
+          if(count($intersect) = count($p2))
                then 
                    <result> <c1> {data($c1/@name)}</c1>
                                   <c2> {data($c2/@name)}</c2>
                     </result>
                else()
 	
+	<!--> Query4b<-->
+	
+	
+	xquery version "3.0";
 
+declare namespace tss = "http://tss";
+declare function tss:is-value-in-sequence
+( $value as xs:anyAtomicType? ,
+$seq as xs:anyAtomicType* ) as xs:boolean {
+$value = $seq
+} ;
+
+for $c1 in //tss/contestants/contestant, $c2 in //tss/contestants/contestant
+where every $p in distinct-values(data($c2/performance/@Pid)) 
+satisfies tss:is-value-in-sequence($p, distinct-values(data($c1/performance/@Pid))) and $c1/@Cid != $c2/@Cid
+return
+<result> <c1> {data($c1/@name)}</c1>
+<c2> {data($c2/@name)}</c2>
+</result>
