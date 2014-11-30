@@ -1,4 +1,4 @@
-       <!--> Query3<-->
+       <!--> Query1<-->
 
 xquery version "3.0";
 
@@ -57,4 +57,28 @@ return
             </result>  
     else()
 
+	
+       <!--> Query4a<-->
+	
+	
+	declare namespace tss = "http://tss";
+declare function tss:value-intersect
+  ( $arg1 as xs:anyAtomicType* ,
+    $arg2 as xs:anyAtomicType* )  as xs:anyAtomicType* {
+        distinct-values($arg1[.=$arg2])
+ } ;
+
+for $c1 in //tss/contestants/contestant, $c2 in //tss/contestants/contestant
+let $p1 := distinct-values(data($c1/performance/@Pid))
+let $p2 := distinct-values(data($c2/performance/@Pid))
+let $intersect := tss:value-intersect($p1,$p2)
+where $c1/@Cid != $c2/@Cid
+return  
+          if(fn:exists($intersect) and count($intersect) = count($p2))
+               then 
+                   <result> <c1> {data($c1/@name)}</c1>
+                                  <c2> {data($c2/@name)}</c2>
+                    </result>
+               else()
+	
 
