@@ -100,3 +100,44 @@ return
 <result> <c1> {data($c1/@name)}</c1>
 <c2> {data($c2/@name)}</c2>
 </result>
+
+	<!--> Query5<-->
+
+xquery version "3.0";
+
+declare namespace tss = "http://tss";
+ declare function tss:first-node
+  ( $nodes as node()* )  as node()? {
+
+   ($nodes/.)[1]
+ } ;
+ 
+declare function tss:coAuditions ($c1 as element(contestant)) as element()* {
+ for $c2 in //tss/contestants/contestant
+    for $p1 in $c1/performance
+    for $p2 in $c2/performance
+    for $sc1 in $p1/score
+    for $sc2 in $p2/score
+    where $p1/@Pid = $p2/@Pid and  $c1/@Cid != $c2/@Cid and $p1/@Sid = $p2/@Sid  and $sc2/points/text() = $sc1/points/text() and $sc2/@Jid = $sc1/@Jid
+    return
+        $c2
+};
+
+  declare function tss:allScores($seq as element(contestant)*) as element()* {
+  (:     let $t := fn:trace($seq,'sequence')  
+        return $t   :)
+       if(count($seq)!=0)
+       then (
+                 (: fn:trace(tss:allScores(tss:checkSameScores( tss:first-node($seq))),'sequence') :)
+                 tss:coAuditions(tss:first-node($seq)) |  tss:allScores(tss:coAuditions( tss:first-node($seq)) | fn:remove($seq,1))
+        )
+       else(
+           fn:trace($seq,'seq')  ) 
+};  
+
+
+for $c1 in //tss/contestants/contestant 
+let $q:= tss:allScores($c1)
+  return <q>{$q}</q> 
+        
+  

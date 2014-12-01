@@ -1,3 +1,14 @@
+  
+<!-->
+CSE532 -- Project 3
+File name: tssDTD.dtd
+Author: Shachee Mishra (109915951 )
+
+I pledge my honor that all parts of this project were done by me alone and
+without collaboration with anybody else.
+
+<-->
+
 
 <!ELEMENT contestant ( performance+ ) ><!ATTLIST contestant Cid  ID NMTOKEN #REQUIRED >
 <!ATTLIST contestant name NMTOKEN #REQUIRED >
