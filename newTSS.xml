@@ -263,12 +263,12 @@
 					<score Jid="11"><points>7</points></score> 
 				
 				</performance>
-				<performace Sid="3" Pid="2">
+				<performance Sid="3" Pid="2">
 					<score Jid="10"><points>8</points></score>
 					<score Jid="11"><points>6</points></score>
 					<score Jid="12"><points>9</points></score> 
 				
-			</performace>
+			</performance>
 			
 			</contestant>
 		</contestants>

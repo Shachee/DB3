@@ -1,4 +1,17 @@
-       <!--> Query1<-->
+  
+<!-->
+CSE532 -- Project 3
+File name: Queries.xml
+Author: Shachee Mishra (109915951 )
+
+I pledge my honor that all parts of this project were done by me alone and
+without collaboration with anybody else.
+
+<-->
+
+
+
+  <!--> Query1<-->
 
 xquery version "3.0";
 
@@ -112,6 +125,8 @@ declare namespace tss = "http://tss";
    ($nodes/.)[1]
  } ;
  
+
+ 
 declare function tss:coAuditions ($c1 as element(contestant)) as element()* {
  for $c2 in //tss/contestants/contestant
     for $p1 in $c1/performance
@@ -123,21 +138,59 @@ declare function tss:coAuditions ($c1 as element(contestant)) as element()* {
         $c2
 };
 
-  declare function tss:allScores($seq as element(contestant)*) as element()* {
-  (:     let $t := fn:trace($seq,'sequence')  
-        return $t   :)
+declare function tss:allCombinations($seq as element(contestant)*) as element()* {
+    
+    for $e1 in $seq
+        for $e2 in $seq
+            where $e1/@Cid != $e2/@Cid
+            return <pair> <c1>{data($e1/@name)}</c1> <c2>{data($e2/@name)}</c2> </pair>
+     
+};
+
+declare function tss:allScores($seq as element(contestant)*) as element()* {
        if(count($seq)!=0)
-       then (
-                 (: fn:trace(tss:allScores(tss:checkSameScores( tss:first-node($seq))),'sequence') :)
-                 tss:coAuditions(tss:first-node($seq)) |  tss:allScores(tss:coAuditions( tss:first-node($seq)) | fn:remove($seq,1))
-        )
-       else(
-           fn:trace($seq,'seq')  ) 
-};  
-
-
-for $c1 in //tss/contestants/contestant 
-let $q:= tss:allScores($c1)
-  return <q>{$q}</q> 
+       then 
+           let $c1 := tss:first-node($seq)
+           return
+                if(count(tss:coAuditions($c1))>0) 
+                        then( for $pair in tss:allCombinations(fn:insert-before(tss:coAuditions($c1),1,$c1))
+                                                        return $pair
+                 ) 
+                            else ()
+                
+        else()
         
+};
+
+declare function tss:query5(){
+let $q1:= ()
+for $c1 in //tss/contestants/contestant 
+let $q:= tss:allScores(($c1))
+let $q1:= $q1 | $q 
+ return if(count($q1)>0) then $q1 else()
+};
+
+declare function tss:distinct-deep 
+  ( $nodes as node()* )  as node()* {
+
+    for $seq in (1 to count($nodes))
+    return $nodes[$seq][not(tss:is-node-in-sequence-deep-equal(
+                          .,$nodes[position() < $seq]))]
+ } ;
+declare function tss:is-node-in-sequence-deep-equal 
+  ( $node as node()? ,
+    $seq as node()* )  as xs:boolean {
+
+   some $nodeInSeq in $seq satisfies deep-equal($nodeInSeq,$node)
+ } ;
+ 
+ 
+let $w:= tss:query5()
+ return tss:distinct-deep(
+    for  $c in $w
+        return if ($c/c1/text() < $c/c2/text())
+            then
+             <final><n1>{$c/c1/text()}</n1><n2>{$c/c2/text()}</n2></final>
+        else()		
+        )
   
